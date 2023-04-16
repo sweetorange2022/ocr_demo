@@ -2,13 +2,11 @@
 一个识别中英、数字tesseract_ocr识别demo，加入了计时器便于统计   
 
 ##文件结构说明  
-tesseract-　  　
-｜　　  
-｜-tesseract-　　  
-                         -chi_sim.traineddata         [中英文识别]　　  
-                         -eng.traineddata　　　　[英文识别]　　  
-｜-image   [待识别图片]　　  
-｜-demo　　  
+　  
+-chi_sim.traineddata         [中英文识别]　　  
+-eng.traineddata　　　　[英文识别]　　  
+-image                                      [待识别图片]　　  
+-demo　　  
 
 ## 测试情况　  　　
 识别时间非常快、　  
@@ -22,9 +20,4 @@ tesseract-　  　
 ３、在tesseract目录下：　g++ ocr.cpp -o ocr `pkg-config --cflags --libs opencv` -llept -ltesseract  　　
 ４、将需要识别的图片放到tesseract目录下，命名为image替换掉当前图片　  　
 ５、shell 　执行：　./ocr　　  
-
-
-
-
-
 
